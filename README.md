@@ -5,7 +5,7 @@
 
 ### Final Render
 
-![Data_table](https://github.com/sssidharth/data-visualization/assets/Data_table.jpg)
+![Data_table](https://github.com/sssidharth/data-visualization/src/Assets/Data_table.jpg)
 
 ### `yarn start`
 
