@@ -27,7 +27,7 @@ function App() {
     for(let key of classes) {
       let data = currentData.filter((e) => e.Alcohol === key);  
       flavData.push(data.map((e) => e.Flavanoids)); // Flavanoids data based on Class
-      gammaData.push(data.map((e) => e.gamma)); // Gamma data based on Class
+      gammaData.push(data.map((e) => Number(e.gamma))); // Gamma data based on Class
     }
     setFlavanoidsData(flavData);
     setGammaData(gammaData);
@@ -54,14 +54,17 @@ function App() {
      for(let i = 0; i <dataSet.length; i++) {
       if(!hm.has(dataSet[i])) hm.set(dataSet[i], 1);
       else {
-        hm.set(dataSet[i], dataSet[i]+1);
+        hm.set(dataSet[i], hm.get(dataSet[i])+1);
       }
      }
     let mode;
     let freq = 0;
 
     for(let [key,value] of hm) {
-       if(value>freq) mode = key
+       if(value>freq) {
+        mode = key;
+        freq = value
+       }
     }
     return mode.toFixed(3);
    }
