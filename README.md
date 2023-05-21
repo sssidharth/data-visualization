@@ -5,8 +5,8 @@
 
 ### Final Render
 
+<img width="1165" alt="Screenshot 2023-05-21 at 5 11 58 PM" src="https://github.com/sssidharth/data-visualization/assets/68149818/392e987c-f9ca-427a-8028-beeaac06862f">
 
-![Data_table](https://github.com/sssidharth/data-visualization/assets/68149818/bc2bca62-69e2-42c6-9303-a96c20e9a4e1)
 
 ### `yarn start`
 
